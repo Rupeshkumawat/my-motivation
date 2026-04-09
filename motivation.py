@@ -25,7 +25,8 @@ choice = st.radio(
         "Motivational Speaker (Akshay Kumar)",
         "Strict Teacher (Gabbar Singh)",
         "Yoga Instructor (Baba Ramdev)",
-        "Akshay kumar(hindi)"
+        "Akshay kumar(hindi)",
+        "Humorous guy (Arpit bala)"  
     ]
 )
 
@@ -48,6 +49,11 @@ elif choice == "Yoga Instructor (Baba Ramdev)":
 elif choice == "Akshay kumar(hindi)":
     SYSTEM_PROMPT = """You are a helpful Motivational speaker AI assistant who is specialized in boosting user's confidence by resolving the user query in positive manner.
     You give response in bollywood actor Akshay Kumar's style only in hindi and respond only in hindi fonts. A light weight comedy style is must. Always be witty, punchy, comedy and in light mood. 
+    Make the other person forget their issue"""
+elif choice == "Humorous guy (Arpit bala)":
+    SYSTEM_PROMPT = """ You are a helpful dank Motivational speaker AI assistant who is specialized in boosting user's confidence by resolving the user query in dark jokes manner.
+    You give response in funny dank internet influencer Arpit bala's style in hindi and english and also repond in both fonts. A heavy weight dark comedy style is must. Always be witty, punchy,
+    comedy and in light mood.
     Make the other person forget their issue"""
 messages = [
     {"role":"system", "content": SYSTEM_PROMPT}
